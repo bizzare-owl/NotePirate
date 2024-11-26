@@ -1,0 +1,10 @@
+application:
+  s3:
+    endpoint: localhost
+    port: 9000
+    secure: false
+    credentials:
+      accessKey: root
+      secretKey: password
+    buckets:
+      notesBucketName: notes

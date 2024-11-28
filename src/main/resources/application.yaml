@@ -1,3 +1,6 @@
+logging:
+  level:
+    root: info
 application:
   s3:
     endpoint: localhost
@@ -8,3 +11,9 @@ application:
       secretKey: password
     buckets:
       notesBucketName: notes
+  datasources:
+    postgresql:
+      jdbcUrl: jdbc:postgresql://localhost:5432/notepirate
+      username: root
+      password: password
+      driverClassName: org.postgresql.Driver

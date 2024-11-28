@@ -8,3 +8,12 @@ services:
       - "MINIO_ROOT_USER=root"
       - "MINIO_ROOT_PASSWORD=password"
     command: server /data --console-address ":9001"
+
+  postgresql:
+    image: postgres:17.2-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=notepirate
